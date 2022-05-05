@@ -23,6 +23,7 @@ import { MenuComponent } from './menu/menu.component';
 import { BookformComponent } from './bookform/bookform.component';
 const routes:Routes=[
   {path:"",component:HomeComponent},
+  {path:"home",component:HomeComponent},
   {path:"news",component:NewsComponent},
   {path:"books",component:BookCatlogComponent},
   {path:"addBook",component:BookformComponent}

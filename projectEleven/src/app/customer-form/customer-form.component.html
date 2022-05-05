@@ -9,10 +9,10 @@
             required minlength="3" #firstNameFormControl="ngModel">
         <!-- <div (change)="onchange()">Data entered: {{fname}} </div> -->
         <div class="help-block" *ngIf="firstNameFormControl.invalid && firstNameFormControl.touched">
-            <span *ngIf="firstNameFormControl.errors?.['required']">
+            <span *ngIf="firstNameFormControl.errors?.required">
                 <strong>First Name is required</strong>
             </span>
-            <span *ngIf="firstNameFormControl.errors?.['minlength']">
+            <span *ngIf="firstNameFormControl.errors?.minlength">
                 <mark>First Name must be more than 3 chars</mark>
             </span>
         </div>
@@ -24,10 +24,10 @@
         <input class="form-control" placeholder="Enter Last Name" name="lname" [ngModel]="customerModel.lastName"
             required minlength="3" #lastNameFormControl="ngModel">
         <div class="help-block" *ngIf="lastNameFormControl.invalid && lastNameFormControl.touched">
-            <span *ngIf="lastNameFormControl.errors?.['required']">
+            <span *ngIf="lastNameFormControl.errors?.required">
                 <strong>Last Name is required</strong>
             </span>
-            <span *ngIf="lastNameFormControl.errors?.['minlength']">
+            <span *ngIf="lastNameFormControl.errors?.minlength">
                 <mark>Last Name must be more than 3 chars</mark>
             </span>
         </div>
